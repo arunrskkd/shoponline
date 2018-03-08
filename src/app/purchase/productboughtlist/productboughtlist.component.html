@@ -1,0 +1,22 @@
+<div class="alert alert-success " role="alert">
+    View Delivery Details
+   </div>
+   <div class="row">
+      <div class="col-lg-12 mb-3">
+          <div class="card">
+                  <table  class="table table-bordered table-sm">
+                          <thead>
+                                  <tr>
+                                        <th>Slno</th><th>Product Name</th><th>Cost</th><th>Color</th><th>View Details</th> <th>Address</th>
+                                  </tr>
+                          </thead>
+                          <tbody>
+                                  <tr *ngFor="let product of item; let i = index">
+                                      <td>{{i+1}}</td><td>{{product.productdetails.productname}}</td><td>{{product.productdetails.productcost}}</td><td>{{product.productdetails.productcolor}}</td><td>{{product.productdetails.detail}}</td><td>{{product.deladdress}}</td> 
+                                  </tr>
+                          </tbody>
+                  </table>
+          </div>          
+      </div>
+  </div>
+  

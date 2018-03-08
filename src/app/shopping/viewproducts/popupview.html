@@ -1,0 +1,17 @@
+<h4 ><b>Product Name:</b> <span>{{data.name.productname}}</span > </h4>
+<div mat-dialog-content >
+  <div >
+    <ul>
+      <li> <b>Cost in RS:</b> {{data.name.productcost}}</li>
+      <li> <b>Color :</b> {{data.name.productcolor}}</li>
+    </ul>
+    <p><b>Details: </b> {{data.name.detail}}</p>
+  </div>
+  <div >
+    <img src="{{data.name.productimage}}" width="100%">
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button class="btn btn-primary" (click)="onNoClick()">Close</button>
+  <!-- <button mat-button  cdkFocusInitial>Ok</button> -->
+</div>
